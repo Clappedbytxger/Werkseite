@@ -1541,14 +1541,14 @@
     <button class="modal-close" onclick="closeModals()">&times;</button>
     <h2>Impressum</h2>
     <h3>Angaben gemäß § 5 TMG</h3>
-    <p><strong>[DEIN VOLLSTÄNDIGER NAME]</strong><br>
-    [Deine Straße + Hausnummer]<br>
-    [PLZ + Ort]</p>
+    <p><strong>Robin Humberg</strong><br>
+    Gustav Mahler Str.6<br>
+    68723 Oftersheim</p>
     <h3>Kontakt</h3>
-    <p>Telefon: [DEINE TELEFONNUMMER]<br>
+    <p>Telefon: +49 17684013082<br>
     E-Mail: robin@werkseite.de</p>
     <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
-    <p>[DEIN VOLLSTÄNDIGER NAME]<br>
+    <p>Robin Humberg<br>
     Adresse wie oben</p>
     <h3>Haftungsausschluss</h3>
     <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
@@ -1562,8 +1562,8 @@
     <h2>Datenschutzerklärung</h2>
     <h3>1. Verantwortlicher</h3>
     <p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br>
-    [DEIN VOLLSTÄNDIGER NAME], [Deine Adresse]<br>
-    E-Mail: robin@werkseite.de</p>
+    Robin Humberg, Gustav-Mahler-Str.6<br>
+    E-Mail: werkseite@gmx.de</p>
     <h3>2. Erhebung personenbezogener Daten</h3>
     <p>Beim Besuch dieser Website werden automatisch Informationen allgemeiner Natur erfasst (Server-Logfiles). Diese beinhalten die Art des Webbrowsers, das verwendete Betriebssystem und den Domainnamen Ihres Internet-Dienstanbieters. Es handelt sich dabei um Informationen, die keine Rückschlüsse auf Ihre Person zulassen.</p>
     <h3>3. Kontaktformular</h3>
@@ -1635,7 +1635,7 @@
     formData.append('_captcha', 'false');
     formData.append('_template', 'table');
 
-    fetch('https://formsubmit.co/ajax/robin@werkseite.de', {
+    fetch('https://formsubmit.co/ajax/werkseite@gmx.de', {
       method: 'POST',
       body: formData
     })
@@ -1643,12 +1643,12 @@
       if (res.ok) {
         showSuccess();
       } else {
-        window.location.href = 'mailto:robin@werkseite.de?subject=' + subject + '&body=' + body;
+        window.location.href = 'mailto:werkseite@gmx.de?subject=' + subject + '&body=' + body;
         showSuccess();
       }
     })
     .catch(() => {
-      window.location.href = 'mailto:robin@werkseite.de?subject=' + subject + '&body=' + body;
+      window.location.href = 'mailto:werkseite@gmx.de?subject=' + subject + '&body=' + body;
       showSuccess();
     });
 
